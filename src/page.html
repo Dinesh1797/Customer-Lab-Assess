@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Save Segment</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <button id="save-segment-btn">Save Segment</button>
+  <div id="popup" style="display: none;">
+    <h2>Save Segment</h2>
+    <input type="text" id="segment-name" placeholder="Enter segment name">
+    <div class="blue-box">
+      <select id="add-schema-to-segment">
+        <option value="">Select schema</option>
+        <option value="first_name">First Name</option>
+        <option value="last_name">Last Name</option>
+        <option value="gender">Gender</option>
+        <option value="age">Age</option>
+        <option value="account_name">Account Name</option>
+        <option value="city">City</option>
+        <option value="state">State</option>
+      </select>
+      <a id="add-new-schema" href="#">+Add new schema</a>
+      <div id="schema-list"></div>
+    </div>
+    <button id="save-segment">Save Segment</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
